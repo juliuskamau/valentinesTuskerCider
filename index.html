@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" dir="ltr" lang="en">
 <head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-	<title>tusker</title>
-	<meta content="Alvaro Trigo Lopez" name="author">
-	<meta content="fullPage full-screen apple iphone 5c similar website. Reproducing one sigle scrolling site like Apple iPhone." name="description">
-	<meta content="fullpage,jquery,demo,screen,fullscreen,apple,iphone5c,iphone5s,iphone,iphone-5c,like,reproduce,similar,how to" name="keywords">
-	<meta content="Document" name="Resource-type">
+	<meta charset="utf-8">
+	<meta content="ie=edge" http-equiv="x-ua-compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Tusker</title>
 	<link href="css/foundation.min.css" rel="stylesheet">
 	<link href="css/anicollection.css" rel="stylesheet">
+	<link href="css/jquery.fullPage.css" rel="stylesheet" type="text/css">
 	<link href="css/app.css" rel="stylesheet"><!--[if IE]>
         <script type="text/javascript">
              var console = { log: function() {} };
@@ -16,14 +15,18 @@
     <![endif]-->
 </head>
 <body>
+	<!-- header start -->
 	<header class="fixed">
 		<div class="row">
-			<div class="large-6 small-6 medium-6 column"><img alt="tusker" class="left" src="imgs/logo.png"></div>
-			<div class="large-6 small-6 medium-6 column">
+			<div class="large-6 small-4 medium-6 column">
+				<img alt="tusker" class="left" src="imgs/logo.png">
+			</div>
+			<div class="large-6 small-6 medium-6 column hide-for-medium-down">
 				<button class="button round">GENERATE HINT</button>
 			</div>
 		</div>
 	</header><!-- header end -->
+	<!-- menu start -->
 	<ul id="menu">
 		<li class="active" data-menuanchor="firstPage">
 			<a href="#firstPage"></a>
@@ -31,7 +34,7 @@
 		<li data-menuanchor="secondPage">
 			<a href="#secondPage"></a>
 		</li>
-		<li data-menuanchor="3rdPage">
+     <li data-menuanchor="3rdPage">
 			<a href="#3rdPage"></a>
 		</li>
 		<li data-menuanchor="4thpage">
@@ -40,9 +43,12 @@
 		<li data-menuanchor="5fifthpage">
 			<a href="#5fifthpage"></a>
 		</li>
-	</ul>
+	
+	</ul> <!-- menu end -->
+	<!-- full page start -->
 	<div id="fullpage">
-		<div class="section fp-auto-height-responsive" id="section0">
+		<!-- section 0 start -->
+		<div class="section active fp-auto-height-responsive" id="section0">
 			<div class="row padding-0 center">
 				<div class="large-2 small-2 medium-2 column hide-for-medium-down">
 					<div class="sidebar" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: scrollReveal">
@@ -58,14 +64,17 @@
 					</div>
 					<p data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">All our tastes are wildly unique because we’re made from the ﬁnest<br>
 					stuff. But does your bae know what you’d like this Valentine’s?<br>
-					Help your bae #GetTheHint this Valentine’s</p><a class="scroll" href="#secondPage"></a>
+					Help your bae #GetTheHint this Valentine’s</p>
+					<a href="#secondPage" class="button round hide-for-medium-up">GENERATE HINT</a>
+					<a class="scroll hide-for-medium-down" href="#secondPage"></a>
 				</div>
 				<div class="large-2 column hide-for-medium-down">
 					&nbsp;&nbsp;
 				</div>
 			</div>
-		</div>
-		<div class="section fp-auto-height-responsive" id="section1">
+		</div><!-- section 0 end -->
+		<!-- section 1 start -->
+		<div class="section" id="section1">
 			<div class="row center wrapper_steps">
 				<div class="large-2 small-2 medium-2 column hide-for-medium-down">
 					<div class="sidebar" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: scrollReveal">
@@ -77,7 +86,10 @@
 					<div class="row step02">
 						<div class="large-3 small-12 medium-12 column" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: scrollReveal">
 							<h1>TAKE THE <span>TEST</span></h1>
-							<p>Share your badge on our pages, get your friends to like, retweet and share. The badge with the most interactions, wins.</p>
+                            <p>Take the test, share your hint sticker on your social media pages for them to see.</p>
+                            <p>We’re not just nudging you to give a hint of your taste with bae, we’ll also be rewarding those who share their hints. Be on the look out for the reward post on our page, comment with your badge and you could get a dope Tusker Cider Valentine’s Hamper!</p>
+                            <p>LET’S DO THIS!</p>
+
 						</div>
 						<div class="large-3 small-4 medium-4 column" data-anijs="if: scroll, on: window, do: fadeInDown animated, before: scrollReveal">
 							<figure class="effect_overlay">
@@ -103,8 +115,9 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="section moveDown fp-auto-height-responsive" id="section2">
+		</div><!-- section 1 end -->
+		<!-- section 2 start -->
+		<div class="section" id="section2">
 			<div class="row center" data-anijs="if: scroll, on: window, do: fadeInDown animated, before: scrollReveal">
 				<div class="large-12 column icon_wrapper">
 					<img alt="tusker" class="clear" src="imgs/icon_01.png">
@@ -129,10 +142,7 @@
 							<div aria-hidden="true" aria-labelledby="modalTitle" class="reveal-modal" data-reveal="" id="myModal" role="dialog">
 								<div class="row">
 									<div class="large-4 column">
-										<figure class="effect_overlay">
-											<a href="#"><img alt="tusker" src="imgs/location.png">
-											<figcaption></figcaption></a>
-										</figure>
+											<img alt="tusker" src="imgs/location.png">
 									</div>
 									<div class="large-8 column">
 										<h2>BEACH SIDE<br>
@@ -145,8 +155,22 @@
 								<div class="center">
 									<p>Share your sticker with your<br>
 									friends and stand a chance to get<br>
-									great prizes</p><a class="button round" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" target="_blank"><i aria-hidden="true" class="fa fa-share-alt"></i> SHARE</a>
-								</div><a class="close-reveal-modal">x</a>
+									great prizes</p>
+									<ul class="social-icon inline">
+										<li class="facebook" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+										</li>
+										<li class="instagram" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-instagram"></i></a>
+										</li>
+										<li class="twitter" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
+										</li>
+
+									  </ul>
+									
+						</div>
+								<a class="close-reveal-modal">x</a>
 							</div><!-- pop up end -->
 						</div>
 						<div class="large-3 small-6 medium-6 column" data-anijs="if: scroll, on: window, do: fadeInDown animated, before: scrollReveal" data-reveal-id="myModal">
@@ -158,10 +182,7 @@
 							<div aria-hidden="true" aria-labelledby="modalTitle" class="reveal-modal" data-reveal="" id="myModal" role="dialog">
 								<div class="row">
 									<div class="large-4 column">
-										<figure class="effect_overlay">
-											<a href="#"><img alt="tusker" src="imgs/location02.png">
-											<figcaption></figcaption></a>
-										</figure>
+											<img alt="tusker" src="imgs/location.png">
 									</div>
 									<div class="large-8 column">
 										<h2>CAMPING</h2>
@@ -173,7 +194,19 @@
 								<div class="center">
 									<p>Share your sticker with your<br>
 									friends and stand a chance to get<br>
-									great prizes</p><a class="button round" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" target="_blank"><i aria-hidden="true" class="fa fa-share-alt"></i> SHARE</a>
+									great prizes</p>
+									<ul class="social-icon inline">
+										<li class="facebook" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+										</li>
+										<li class="instagram" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-instagram"></i></a>
+										</li>
+										<li class="twitter" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
+										</li>
+
+									  </ul>
 								</div>
 							</div>
 						</div>
@@ -186,10 +219,7 @@
 							<div aria-hidden="true" aria-labelledby="modalTitle" class="reveal-modal" data-reveal="" id="myModal" role="dialog">
 								<div class="row">
 									<div class="large-4 column">
-										<figure class="effect_overlay">
-											<a href="#"><img alt="tusker" src="imgs/location03.png">
-											<figcaption></figcaption></a>
-										</figure>
+											<img alt="tusker" src="imgs/location.png">
 									</div>
 									<div class="large-8 column">
 										<h2>SUNSET CRUISE</h2>
@@ -201,7 +231,19 @@
 								<div class="center">
 									<p>Share your sticker with your<br>
 									friends and stand a chance to get<br>
-									great prizes</p><a class="button round" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" target="_blank"><i aria-hidden="true" class="fa fa-share-alt"></i> SHARE</a>
+									great prizes</p>
+									<ul class="social-icon inline">
+										<li class="facebook" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+										</li>
+										<li class="instagram" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-instagram"></i></a>
+										</li>
+										<li class="twitter" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
+										</li>
+
+									  </ul>
 								</div>
 							</div>
 						</div>
@@ -214,10 +256,7 @@
 							<div aria-hidden="true" aria-labelledby="modalTitle" class="reveal-modal" data-reveal="" id="myModal" role="dialog">
 								<div class="row">
 									<div class="large-4 column">
-										<figure class="effect_overlay">
-											<a href="#"><img alt="tusker" src="imgs/location04.png">
-											<figcaption></figcaption></a>
-										</figure>
+											<img alt="tusker" src="imgs/location.png">
 									</div>
 									<div class="large-8 column">
 										<h2>SUNSET CRUISE</h2>
@@ -229,15 +268,28 @@
 								<div class="center">
 									<p>Share your sticker with your<br>
 									friends and stand a chance to get<br>
-									great prizes</p><a class="button round" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" target="_blank"><i aria-hidden="true" class="fa fa-share-alt"></i> SHARE</a>
+									great prizes</p>
+									<ul class="social-icon inline">
+										<li class="facebook" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+										</li>
+										<li class="instagram" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-instagram"></i></a>
+										</li>
+										<li class="twitter" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
+										</li>
+
+									  </ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="section moveDown fp-auto-height-responsive" id="section3">
+		</div><!-- section 2 end -->
+		<!-- section 3 start -->
+		<div class="section" id="section3">
 			<div class="row center" data-anijs="if: scroll, on: window, do: fadeInDown animated, before: scrollReveal">
 				<div class="large-12 column icon_wrapper">
 					<img alt="tusker" class="clear" src="imgs/icon_02.png">
@@ -263,10 +315,7 @@
 							<div aria-hidden="true" aria-labelledby="modalTitle" class="reveal-modal" data-reveal="" id="myModal" role="dialog">
 								<div class="row">
 									<div class="large-4 column">
-										<figure class="effect_overlay">
-											<a href="#"><img alt="tusker" src="imgs/location06.png">
-											<figcaption></figcaption></a>
-										</figure>
+											<img alt="tusker" src="imgs/location.png">
 									</div>
 									<div class="large-8 column">
 										<h2>BEACH SIDE<br>
@@ -279,8 +328,19 @@
 								<div class="center">
 									<p>Share your sticker with your<br>
 									friends and stand a chance to get<br>
-									great prizes</p><a class="button round" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" target="_blank"><i aria-hidden="true" class="fa fa-share-alt"></i> SHARE</a>
-								</div><a class="close-reveal-modal">x</a>
+									great prizes</p>
+									<ul class="social-icon inline">
+										<li class="facebook" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+										</li>
+										<li class="instagram" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-instagram"></i></a>
+										</li>
+										<li class="twitter" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
+										</li>
+
+									  </ul>								</div><a class="close-reveal-modal">x</a>
 							</div><!-- pop up end -->
 						</div>
 						<div class="large-3 small-6 medium-6 column" data-anijs="if: scroll, on: window, do: fadeInDown animated, before: scrollReveal" data-reveal-id="myModal">
@@ -292,10 +352,7 @@
 							<div aria-hidden="true" aria-labelledby="modalTitle" class="reveal-modal" data-reveal="" id="myModal" role="dialog">
 								<div class="row">
 									<div class="large-4 column">
-										<figure class="effect_overlay">
-											<a href="#"><img alt="tusker" src="imgs/location08.png">
-											<figcaption></figcaption></a>
-										</figure>
+											<img alt="tusker" src="imgs/location.png">
 									</div>
 									<div class="large-8 column">
 										<h2>CAMPING</h2>
@@ -307,7 +364,19 @@
 								<div class="center">
 									<p>Share your sticker with your<br>
 									friends and stand a chance to get<br>
-									great prizes</p><a class="button round" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" target="_blank"><i aria-hidden="true" class="fa fa-share-alt"></i> SHARE</a>
+									great prizes</p>
+									<ul class="social-icon inline">
+										<li class="facebook" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+										</li>
+										<li class="instagram" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-instagram"></i></a>
+										</li>
+										<li class="twitter" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
+										</li>
+
+									  </ul>
 								</div>
 							</div>
 						</div>
@@ -320,10 +389,7 @@
 							<div aria-hidden="true" aria-labelledby="modalTitle" class="reveal-modal" data-reveal="" id="myModal" role="dialog">
 								<div class="row">
 									<div class="large-4 column">
-										<figure class="effect_overlay">
-											<a href="#"><img alt="tusker" src="imgs/location07.png">
-											<figcaption></figcaption></a>
-										</figure>
+											<img alt="tusker" src="imgs/location.png">
 									</div>
 									<div class="large-8 column">
 										<h2>SUNSET CRUISE</h2>
@@ -335,7 +401,19 @@
 								<div class="center">
 									<p>Share your sticker with your<br>
 									friends and stand a chance to get<br>
-									great prizes</p><a class="button round" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" target="_blank"><i aria-hidden="true" class="fa fa-share-alt"></i> SHARE</a>
+									great prizes</p>
+									<ul class="social-icon inline">
+										<li class="facebook" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+										</li>
+										<li class="instagram" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-instagram"></i></a>
+										</li>
+										<li class="twitter" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
+										</li>
+
+									  </ul>
 								</div>
 							</div>
 						</div>
@@ -348,10 +426,7 @@
 							<div aria-hidden="true" aria-labelledby="modalTitle" class="reveal-modal" data-reveal="" id="myModal" role="dialog">
 								<div class="row">
 									<div class="large-4 column">
-										<figure class="effect_overlay">
-											<a href="#"><img alt="tusker" src="imgs/location12.png">
-											<figcaption></figcaption></a>
-										</figure>
+											<img alt="tusker" src="imgs/location.png">
 									</div>
 									<div class="large-8 column">
 										<h2>SUNSET CRUISE</h2>
@@ -363,15 +438,27 @@
 								<div class="center">
 									<p>Share your sticker with your<br>
 									friends and stand a chance to get<br>
-									great prizes</p><a class="button round" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" target="_blank"><i aria-hidden="true" class="fa fa-share-alt"></i> SHARE</a>
-								</div>
+									great prizes</p>
+									<ul class="social-icon inline">
+										<li class="facebook" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+										</li>
+										<li class="instagram" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-instagram"></i></a>
+										</li>
+										<li class="twitter" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
+										</li>
+
+									  </ul>								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="section moveDown fp-auto-height-responsive" id="section4">
+		</div><!-- section 3 end -->
+		<!-- section 4 start -->
+		<div class="section" id="section4">
 			<div class="row center" data-anijs="if: scroll, on: window, do: fadeInDown animated, before: scrollReveal">
 				<div class="large-12 column icon_wrapper">
 					<img alt="tusker" class="clear" src="imgs/icon_03.png">
@@ -397,10 +484,7 @@
 							<div aria-hidden="true" aria-labelledby="modalTitle" class="reveal-modal" data-reveal="" id="myModal" role="dialog">
 								<div class="row">
 									<div class="large-4 column">
-										<figure class="effect_overlay">
-											<a href="#"><img alt="tusker" src="imgs/location09.png">
-											<figcaption></figcaption></a>
-										</figure>
+											<img alt="tusker" src="imgs/location.png">
 									</div>
 									<div class="large-8 column">
 										<h2>BEACH SIDE<br>
@@ -413,7 +497,19 @@
 								<div class="center">
 									<p>Share your sticker with your<br>
 									friends and stand a chance to get<br>
-									great prizes</p><a class="button round" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" target="_blank"><i aria-hidden="true" class="fa fa-share-alt"></i> SHARE</a>
+									great prizes</p>
+									<ul class="social-icon inline">
+										<li class="facebook" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+										</li>
+										<li class="instagram" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-instagram"></i></a>
+										</li>
+										<li class="twitter" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
+										</li>
+
+									  </ul>
 								</div><a class="close-reveal-modal">x</a>
 							</div><!-- pop up end -->
 						</div>
@@ -426,10 +522,7 @@
 							<div aria-hidden="true" aria-labelledby="modalTitle" class="reveal-modal" data-reveal="" id="myModal" role="dialog">
 								<div class="row">
 									<div class="large-4 column">
-										<figure class="effect_overlay">
-											<a href="#"><img alt="tusker" src="imgs/location.png">
-											<figcaption></figcaption></a>
-										</figure>
+											<img alt="tusker" src="imgs/location.png">
 									</div>
 									<div class="large-8 column">
 										<h2>CAMPING</h2>
@@ -441,7 +534,19 @@
 								<div class="center">
 									<p>Share your sticker with your<br>
 									friends and stand a chance to get<br>
-									great prizes</p><a class="button round" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" target="_blank"><i aria-hidden="true" class="fa fa-share-alt"></i> SHARE</a>
+									great prizes</p>
+									<ul class="social-icon inline">
+										<li class="facebook" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+										</li>
+										<li class="instagram" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-instagram"></i></a>
+										</li>
+										<li class="twitter" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
+										</li>
+
+									  </ul>
 								</div>
 							</div>
 						</div>
@@ -454,10 +559,7 @@
 							<div aria-hidden="true" aria-labelledby="modalTitle" class="reveal-modal" data-reveal="" id="myModal" role="dialog">
 								<div class="row">
 									<div class="large-4 column">
-										<figure class="effect_overlay">
-											<a href="#"><img alt="tusker" src="imgs/location.png">
-											<figcaption></figcaption></a>
-										</figure>
+											<img alt="tusker" src="imgs/location.png">
 									</div>
 									<div class="large-8 column">
 										<h2>SUNSET CRUISE</h2>
@@ -469,7 +571,19 @@
 								<div class="center">
 									<p>Share your sticker with your<br>
 									friends and stand a chance to get<br>
-									great prizes</p><a class="button round" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" target="_blank"><i aria-hidden="true" class="fa fa-share-alt"></i> SHARE</a>
+									great prizes</p>
+									<ul class="social-icon inline">
+										<li class="facebook" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+										</li>
+										<li class="instagram" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-instagram"></i></a>
+										</li>
+										<li class="twitter" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
+										</li>
+
+									  </ul>
 								</div>
 							</div>
 						</div>
@@ -482,10 +596,7 @@
 							<div aria-hidden="true" aria-labelledby="modalTitle" class="reveal-modal" data-reveal="" id="myModal" role="dialog">
 								<div class="row">
 									<div class="large-4 column">
-										<figure class="effect_overlay">
-											<a href="#"><img alt="tusker" src="imgs/location.png">
-											<figcaption></figcaption></a>
-										</figure>
+											<img alt="tusker" src="imgs/location.png">
 									</div>
 									<div class="large-8 column">
 										<h2>SUNSET CRUISE</h2>
@@ -497,24 +608,38 @@
 								<div class="center">
 									<p>Share your sticker with your<br>
 									friends and stand a chance to get<br>
-									great prizes</p><a class="button round" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" target="_blank"><i aria-hidden="true" class="fa fa-share-alt"></i> SHARE</a>
+									great prizes</p>
+									<ul class="social-icon inline">
+										<li class="facebook" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+										</li>
+										<li class="instagram" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-instagram"></i></a>
+										</li>
+										<li class="twitter" data-anijs="if: scroll, on: window, do: rotate animated, before: scrollReveal; if: load, on: window, do: rubberBand animated; if: mouseover, do: rubberBand animated" src="images/step03.png">
+										  <a href="html/#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
+										</li>
+
+									  </ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div><!-- section 4 end -->
+	</div><!-- fullpag end -->
 		<script src="js/jquery-min.js">
 		</script> 
 		<script src="js/jquery-ui.min.js">
 		</script> 
 		<script src="js/foundation.min.js" type="text/javascript">
 		</script> 
-<!-- <script src="js/scrolloverflow.js" type="text/javascript">
-		</script> -->
+    <script src="js/scrolloverflow.js" type="text/javascript">
+		</script> 
 		<script src="js/jquery.fullPage.js" type="text/javascript">
 		</script> 
+
 		<script src="js/fontawesome.js" type="text/javascript">
 		</script> 
 		<script src="js/anijs-min.js">
@@ -523,8 +648,11 @@
 		</script> 
 		<script src="js/snow.js">
 		</script> 
+  <script src="js/scrolloverflow.js">
+   </script> 
 		<script src="js/app.js" type="text/javascript">
 		</script>
-	</div>
+
+
 </body>
 </html>
